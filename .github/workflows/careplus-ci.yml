@@ -21,7 +21,18 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Check JavaScript Syntax
         run: node --check server.js
+
+      - name: Start CarePlus Server
+        run: |
+          node server.js &
+          sleep 10
+
+      - name: Run Selenium Test
+        run: npm test
+
+      - name: Build Docker Image
+        run: docker build -t careplus:latest .
