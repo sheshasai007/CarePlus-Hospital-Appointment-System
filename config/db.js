@@ -1,9 +1,12 @@
+
+require("dotenv").config();
+
 const mysql = require("mysql2");
 
 const db = mysql.createConnection({
-    host: "localhost",
+    host: "host.docker.internal",
     user: "root",
-    password: "qwerty",
+    password: process.env.DB_PASSWORD,
     database: "careplus"
 });
 
