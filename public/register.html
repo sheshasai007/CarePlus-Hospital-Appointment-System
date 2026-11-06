@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration - CarePlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>🏥 CarePlus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="auth-section">
+    <div class="auth-box">
+        <h2>Create Your Account</h2>
+        <p>Register as a new CarePlus patient.</p>
+
+        <form onsubmit="registerPatient(event)">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Create password" required minlength="6">
+
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+
+            <button type="submit" class="btn auth-btn">Register</button>
+        </form>
+
+        <p class="auth-link">
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
+</section>
+
+<footer>
+    <h3>🏥 CarePlus Hospital</h3>
+    <p>Quality care, better health.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

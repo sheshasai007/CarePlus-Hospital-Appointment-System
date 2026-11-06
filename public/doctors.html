@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - CarePlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/script.js"></script>
+<body>
+
+<header>
+    <h2>🏥 CarePlus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="doctor-heading">
+    <h1>Meet Our Expert Doctors</h1>
+    <p>Choose the right specialist for your healthcare needs.</p>
+</section>
+
+<section class="doctor-search">
+    <input type="text" id="doctorSearch"
+           placeholder="Search doctor or specialization..."
+           oninput="filterDoctors()">
+
+    <select id="doctorFilter" onchange="filterDoctors()">
+        <option value="">All Specializations</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Dermatology">Dermatology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Dentistry">Dentistry</option>
+    </select>
+</section>
+
+<section class="doctor-list">
+
+    <div class="doctor-list" id="doctorList">
+    <p>Loading doctors...</p>
+</div>
+</section>
+
+<footer>
+    <h3>🏥 CarePlus Hospital</h3>
+    <p>Quality care, better health.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

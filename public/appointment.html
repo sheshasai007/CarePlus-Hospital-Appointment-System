@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment - CarePlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>CarePlus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="auth-section">
+    <div class="auth-box appointment-box">
+        <h2>Book an Appointment</h2>
+        <p>Fill in your details to schedule a doctor visit.</p>
+
+        <form onsubmit="bookAppointment(event)">
+
+            <label>Patient Name</label>
+            <input type="text" id="patientName"
+                   placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="patientEmail"
+                   placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="patientPhone"
+                   placeholder="Enter your phone number"
+                   pattern="[0-9]{10}" maxlength="10" required>
+
+            <label>Select Doctor</label>
+<select id="doctorName" required>
+    <option value="">Loading doctors...</option>
+</select>
+
+            <label>Appointment Date</label>
+            <input type="date" id="appointmentDate" required>
+
+            <label>Appointment Time</label>
+            <select id="appointmentTime" required>
+                <option value="">Choose a time</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>02:00 PM</option>
+                <option>03:00 PM</option>
+                <option>04:00 PM</option>
+            </select>
+
+            <label>Reason for Visit</label>
+            <textarea id="reason" placeholder="Enter reason"
+                      rows="3" required></textarea>
+
+            <button type="submit">Confirm Appointment</button>
+        </form>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

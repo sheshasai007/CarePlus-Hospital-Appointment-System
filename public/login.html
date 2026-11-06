@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - CarePlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>CarePlus</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="auth-section">
+    <div class="auth-box">
+        <h2>Patient Login</h2>
+
+        <form onsubmit="loginPatient(event)">
+            <label>Email</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account?
+            <a href="register.html">Register here</a>
+        </p>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

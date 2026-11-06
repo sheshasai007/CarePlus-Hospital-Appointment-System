@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>🏥 CarePlus</h2>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="login.html">Login</a>
+        <a href="register.html" class="nav-btn">Register</a>
+    </nav>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="hero">
+    <div>
+        <p class="tag">YOUR HEALTH, OUR PRIORITY</p>
+        <h1>Quality Healthcare<br>Made Simple</h1>
+        <p>Find the right doctor and book your hospital
+           appointment easily from anywhere.</p>
+        <a href="doctors.html" class="btn">Book Appointment →</a>
+    </div>
+    <div class="hero-icon">🩺</div>
+</section>
+
+<section class="search">
+    <h2>Find Your Doctor</h2>
+    <p>Choose a specialization to find the right doctor.</p>
+    <select id="specialization">
+        <option value="">Select Specialization</option>
+        <option>Cardiology</option>
+        <option>Dermatology</option>
+        <option>Neurology</option>
+        <option>Dentistry</option>
+    </select>
+    <button class="btn" onclick="searchDoctor()">Search</button>
+</section>
+
+<section class="special">
+    <h2>Our Specializations</h2>
+    <p>Expert care for every health need.</p>
+
+    <div class="cards">
+        <div class="card">
+            <span>❤️</span>
+            <h3>Cardiology</h3>
+            <p>Heart specialists</p>
+        </div>
+        <div class="card">
+            <span>🧴</span>
+            <h3>Dermatology</h3>
+            <p>Skin specialists</p>
+        </div>
+        <div class="card">
+            <span>🧠</span>
+            <h3>Neurology</h3>
+            <p>Brain specialists</p>
+        </div>
+        <div class="card">
+            <span>🦷</span>
+            <h3>Dentistry</h3>
+            <p>Dental specialists</p>
+        </div>
+    </div>
+</section>
+
+<section class="doctors">
+    <h2>Why Choose CarePlus?</h2>
+    <div class="cards">
+        <div class="card">
+            <span>👨‍⚕️</span>
+            <h3>Expert Doctors</h3>
+            <p>Experienced medical professionals.</p>
+        </div>
+        <div class="card">
+            <span>📅</span>
+            <h3>Easy Booking</h3>
+            <p>Book appointments in a few clicks.</p>
+        </div>
+        <div class="card">
+            <span>⏰</span>
+            <h3>Save Time</h3>
+            <p>Choose convenient available slots.</p>
+        </div>
+    </div>
+</section>
+
+<section class="bottom">
+    <h2>Take Care of Your Health Today!</h2>
+    <p>Book an appointment with our doctors.</p>
+    <a href="doctors.html" class="btn">Get Started</a>
+</section>
+
+<footer>
+    <h3>🏥 CarePlus Hospital</h3>
+    <p>Quality care, better health.</p>
+    <p>© <span id="year"></span> CarePlus Hospital. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

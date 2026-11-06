@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - CarePlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>CarePlus Admin</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="my-appointments.html">My Appointments</a>
+    </nav>
+</header>
+
+<section class="auth-section">
+    <div class="auth-box appointment-box">
+        <h2>Admin Dashboard</h2>
+        <h3>All Appointments</h3>
+        <h2>Appointments</h2>
+        <div class="cards">
+    <div class="card">
+        <h3>Total Appointments</h3>
+        <h2 id="total">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Booked</h3>
+        <h2 id="booked">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Completed</h3>
+        <h2 id="completed">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Cancelled</h3>
+        <h2 id="cancelled">0</h2>
+    </div>
+</div>
+
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Reason</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentList"></tbody>
+</table>
+        <div id="adminAppointments"></div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
